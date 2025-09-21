@@ -5,8 +5,20 @@ export interface PostProps {
   body: string;
 }
 
+export interface PostData {
+  userId: number;
+  id?: number;
+  title: string;
+  body: string;
+}
 
-export interface UserProps {
+export interface PostModalProps {
+  onClose: () => void;
+  onSubmit: (post: PostData) => void;
+}
+
+
+export interface UserData {
     id:       number;
     name:     string;
     username: string;
@@ -15,6 +27,11 @@ export interface UserProps {
     phone:    string;
     website:  string;
     company:  Company;
+}
+
+export interface UserModalProps {
+  onClose: () => void;
+  onSubmit: (user: UserData) => void;
 }
 
 export interface Address {
