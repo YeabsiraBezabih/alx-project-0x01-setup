@@ -6,7 +6,7 @@ export interface PostProps {
 }
 
 
-export interface UserData {
+export interface UserProps {
     id:       number;
     name:     string;
     username: string;
@@ -34,8 +34,4 @@ export interface Company {
     name:        string;
     catchPhrase: string;
     bs:          string;
-}
-
-export interface UserProps {
-  user: UserData;
 }
