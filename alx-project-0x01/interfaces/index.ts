@@ -6,7 +6,7 @@ export interface PostProps {
 }
 
 
-export interface User {
+export interface UserData {
     id:       number;
     name:     string;
     username: string;
@@ -36,6 +36,6 @@ export interface Company {
     bs:          string;
 }
 
-export interface UserCardProps {
-  user: User;
+export interface UserProps {
+  user: UserData;
 }
